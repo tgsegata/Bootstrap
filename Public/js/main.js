@@ -17,10 +17,10 @@ async function getRecords() {
     console.log(data);
 
     // cards section
-    document.querySelector('#unresolved-count').textContent = data.unresolved;
-    document.querySelector('#overdue-count').textContent = data.overdue;
-    document.querySelector('#open-count').textContent = data.open;
-    document.querySelector('#onHold-count').textContent = data.onHold;
+    document.querySelector('#unresolved-data').textContent = data.unresolved;
+    document.querySelector('#overdue-data').textContent = data.overdue;
+    document.querySelector('#open-data').textContent = data.open;
+    document.querySelector('#onHold-data').textContent = data.onHold;
 
     // stats column besides graphic
     document.querySelector('#resolved-stat').textContent = data.resolved;
