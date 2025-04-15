@@ -1,11 +1,11 @@
 {
-    "unresolved": 60,
-    "overdue": 16,
-    "open": 43,
-    "onHold": 64,
-    "resolved": 449,
-    "received": 426,
-    "avgFirstResponse": "33m",
-    "avgResponse": "3h 8m",
-    "resolutionSLA": "94%"
+    "unresolved": 100,
+    "overdue": 101,
+    "open": 102,
+    "onHold": 103,
+    "resolved": 104,
+    "received": 105,
+    "avgFirstResponse": "106m",
+    "avgResponse": "10h 7m",
+    "resolutionSLA": "108%"
   }
