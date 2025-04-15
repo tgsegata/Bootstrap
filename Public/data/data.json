@@ -7,5 +7,9 @@
     "received": 105,
     "avgFirstResponse": "106m",
     "avgResponse": "10h 7m",
-    "resolutionSLA": "108%"
-  }
+    "resolutionSLA": "108%",
+    "waitingFeature": 109,
+    "awaitingResponse": 110,
+    "awaitingFix": 111,
+    "pending": 112
+}

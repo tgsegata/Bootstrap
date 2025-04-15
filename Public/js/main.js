@@ -28,6 +28,12 @@ async function getRecords() {
     document.querySelector('#first-response-stat').textContent = data.avgFirstResponse;
     document.querySelector('#avg-response-stat').textContent = data.avgResponse;
     document.querySelector('#sla-stat').textContent = data.resolutionSLA;
+
+    // Section Unresolved Tickets
+    document.querySelector('#waiting-feature').textContent = data.waitingFeature;
+    document.querySelector('#awaiting-response').textContent = data.awaitingResponse;
+    document.querySelector('#awaiting-fix').textContent = data.awaitingFix;
+    document.querySelector('#pending').textContent = data.pending;
 }
 
 
