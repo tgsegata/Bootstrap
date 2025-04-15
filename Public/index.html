@@ -160,7 +160,7 @@
 
       </div>
 
-      <!-- HTML Section Cards -->
+
       <!-- section cards -->
       <div class="row">
         <!-- card 1 -->
@@ -423,143 +423,142 @@
             <!-- end of graphic image -->
           </div>
 
+
+          
           <!-- Right Column: Stats -->
           <div class="col-md-4 graphic-data" style="padding: 0;">
             <div class="row border-bottom padding-zero-top">
               <div class="col-8 text-muted">Resolved</div>
-              <div class="col-4 fw-bold text-end">449</div>
+              <div class="col-4 fw-bold text-end" id="resolved-stat">--</div>
             </div>
             <div class="row border-bottom">
               <div class="col-8 text-muted">Received</div>
-              <div class="col-4 fw-bold text-end">426</div>
+              <div class="col-4 fw-bold text-end" id="received-stat">--</div>
             </div>
             <div class="row border-bottom">
               <div class="col-8 text-muted">Average first response time</div>
-              <div class="col-4 fw-bold text-end">33m</div>
+              <div class="col-4 fw-bold text-end" id="first-response-stat">--</div>
             </div>
             <div class="row border-bottom">
               <div class="col-8 text-muted">Average response time</div>
-              <div class="col-4 fw-bold text-end">3h 8m</div>
+              <div class="col-4 fw-bold text-end" id="avg-response-stat">--</div>
             </div>
             <div class="row padding-zero-bottom">
               <div class="col-8 text-muted">Resolution within SLA</div>
-              <div class="col-4 fw-bold text-end">94%</div>
+              <div class="col-4 fw-bold text-end" id="sla-stat">--</div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Section Tickets & Tasks -->
+          <div class="tickets-tasks">
+
+            <!-- Section Unresolved Tickets -->
+            <div class="card card-ticket" style="width: 50%;">
+              <div class="card-body-title">
+                <div class="card-body">
+                  <h5 class="card-title">Unresolved tickets</h5>
+                  <p class="card-text">View details</p>
+                </div>
+                <h5>Group: <span>Support</span></h5>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Waiting on Feature Request
+                  <span class="badge bg-primary rounded-pill">4238</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Awaiting Customer Response
+                  <span class="badge bg-primary rounded-pill">1005</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Awaiting Developer Fix
+                  <span class="badge bg-primary rounded-pill">914</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;">
+                  Pending
+                  <span class="badge bg-primary rounded-pill">281</span>
+                </li>
+              </ul>
             </div>
 
-          </div>
-        </div>
-      </div>
 
+            <!-- Section TASKS -->
+            <div class="card card-ticket card-task" style="width: 50%;">
+              <!-- title card -->
+              <div class="card-body-title">
+                <div class="card-body">
+                  <h5 class="card-title">Tasks</h5>
+                  <p class="card-text">View all</p>
+                </div>
+                <h5>Today</h5>
+              </div>
+              <!-- list of items task -->
+              <ul class="list-group">
 
+                <!-- title create new task -->
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <span style="color: #c5c7cd">Create new task</span>
+                  <span class="badge bg-primary rounded-pill">
+                    <svg id="hover-roundedbutton-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="24" height="24" rx="8" fill="#F0F1F7" />
+                      <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
+                      <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                </li>
 
+                <!-- tasks -->
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <div class="task-input">
+                    <input type="checkbox" class="form-check-input" id="finish-ticket-update">
+                    <label class="form-check-label" for="finish-ticket-update">Finish ticket update</label>
+                  </div>
+                  <button id="hover-roundedbutton-1" class="rounded-pill"
+                    style="background-color: #fec400; min-width: 100px; ">urgent</button>
+                </li>
 
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  <div class="task-input">
+                    <input type="checkbox" class="form-check-input" id="create-new-ticket">
+                    <label class="form-check-label" for="create-new-ticket">Create new ticket example</label>
+                  </div>
+                  <button id="hover-roundedbutton-2" class="rounded-pill"
+                    style="background-color: #29cc97; min-width: 100px;">new</button>
+                </li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- Section Tickets & Tasks -->
-      <div class="tickets-tasks">
-
-        <!-- Section Unresolved Tickets -->
-        <div class="card card-ticket" style="width: 50%;">
-          <div class="card-body-title">
-            <div class="card-body">
-              <h5 class="card-title">Unresolved tickets</h5>
-              <p class="card-text">View details</p>
+                <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;">
+                  <div class="task-input">
+                    <input type="checkbox" class="form-check-input" id="update-ticket-report">
+                    <label class="form-check-label" for="update-ticket-report">Update ticket report</label>
+                  </div>
+                  <button id="hover-roundedbutton-3" class="rounded-pill"
+                    style="background-color: #f0f1f7; min-width: 100px; color: #9fa2b4;">default</button>
+                </li>
+              </ul>
             </div>
-            <h5>Group: <span>Support</span></h5>
+
+
+            <!-- end of tickets & tasks -->
           </div>
-          <ul class="list-group">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Waiting on Feature Request
-              <span class="badge bg-primary rounded-pill">4238</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Awaiting Customer Response
-              <span class="badge bg-primary rounded-pill">1005</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Awaiting Developer Fix
-              <span class="badge bg-primary rounded-pill">914</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;">
-              Pending
-              <span class="badge bg-primary rounded-pill">281</span>
-            </li>
-          </ul>
-        </div>
 
-
-        <!-- Section TASKS -->
-        <div class="card card-ticket card-task" style="width: 50%;">
-          <!-- title card -->
-          <div class="card-body-title">
-            <div class="card-body">
-              <h5 class="card-title">Tasks</h5>
-              <p class="card-text">View all</p>
-            </div>
-            <h5>Today</h5>
-          </div>
-          <!-- list of items task -->
-          <ul class="list-group">
-
-            <!-- title create new task -->
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <span style="color: #c5c7cd">Create new task</span>
-              <span class="badge bg-primary rounded-pill">
-                <svg id="hover-roundedbutton-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <rect width="24" height="24" rx="8" fill="#F0F1F7" />
-                  <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
-                  <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round" />
-                </svg>
-              </span>
-            </li>
-
-            <!-- tasks -->
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <div class="task-input">
-                <input type="checkbox" class="form-check-input" id="finish-ticket-update">
-                <label class="form-check-label" for="finish-ticket-update">Finish ticket update</label>
-              </div>
-              <button id="hover-roundedbutton-1" class="rounded-pill"
-                style="background-color: #fec400; min-width: 100px; ">urgent</button>
-            </li>
-
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <div class="task-input">
-                <input type="checkbox" class="form-check-input" id="create-new-ticket">
-                <label class="form-check-label" for="create-new-ticket">Create new ticket example</label>
-              </div>
-              <button id="hover-roundedbutton-2" class="rounded-pill"
-                style="background-color: #29cc97; min-width: 100px;">new</button>
-            </li>
-
-            <li class="list-group-item d-flex justify-content-between align-items-center" style="border: none;">
-              <div class="task-input">
-                <input type="checkbox" class="form-check-input" id="update-ticket-report">
-                <label class="form-check-label" for="update-ticket-report">Update ticket report</label>
-              </div>
-              <button id="hover-roundedbutton-3" class="rounded-pill"
-                style="background-color: #f0f1f7; min-width: 100px; color: #9fa2b4;">default</button>
-            </li>
-          </ul>
-        </div>
-
-
-        <!-- end of tickets & tasks -->
-      </div>
-
-      <!-- end of main page -->
+          <!-- end of main page -->
     </section>
   </main>
 
