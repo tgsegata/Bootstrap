@@ -1,0 +1,42 @@
+{
+    "siteName": "My Site",
+    "contactEmail": "amanda.lutz@senecacollege.ca",
+    "phone": "416-123-1234",
+    "mainnav": [
+        {
+            "url": "/",
+            "text": "Home",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": false
+        },
+        {
+            "url": "/about.html",
+            "text": "About",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": false
+        },
+        {
+            "url": "/blog.html",
+            "text": "Blog",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": false
+        },
+        {
+            "url": "https://www.shopify.com",
+            "text": "Shopping",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": true
+        },
+        {
+            "url": "/contact.html",
+            "text": "Contact Us",
+            "linkId": "",
+            "linkClass": "",
+            "newTab": false
+        }
+    ]
+}
